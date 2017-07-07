@@ -19,3 +19,19 @@ export function multiToSingel(arr){
 		return newArr
 	}(arr)
 }
+
+
+/**
+ * 检查一个string 是不是符合url的格式，不强校验http|https|ftp
+ * @param  {[String]} url
+ * @return {[Boolean]}
+ */
+export function checkUrl(url){
+	const reg = /^(\w+)\:\/\/([^\/]+)\/(.*)$/;
+	return reg.exec(url)
+}
+
+
+
+
+
